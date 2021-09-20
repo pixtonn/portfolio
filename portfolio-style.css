@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #414141;
+  background-color: #EEEEEE;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: lower-roman;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: left;
+}
+
+div {
+  color: #FFF;
+  background-color: gray;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+
+  width: 400px;
+  box-sizing: border-box;
+  margin: 20px auto; /* Vertical  Horizontal */
+}
+
+.flexboxer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about-me {
+  width: 80%;
+}
+
+.projects, .experience {
+  width: 45%;
+}
+
+.contact {
+  justify-self: flex-start;
+  width: 100%;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .flexboxer {
+    flex-direction: column;
+  }
+
+  .projects, .experience {
+    width: 90%;
+  }
+}
